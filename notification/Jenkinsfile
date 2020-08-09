@@ -1,7 +1,8 @@
 pipeline { 
-    agent master
+    agent none
     stages {
-        stage('test') { 
+        stage('test') {
+            agent master 
             steps { 
                 sh 'echo hey!!!!' 
             }
